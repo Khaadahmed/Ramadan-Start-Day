@@ -1,34 +1,45 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramadan 2025 Countdown</title>
+    <title>Ramadan 2026 Countdown</title>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Ramadan 2025 Countdown</h1>
+        <h1>Ramadan 2026 Countdown</h1>
         <p>May this Ramadan bring you peace, prosperity, and spiritual growth.</p>
-        <div id="countdown">
+        <p class="ramadan-date"><strong>Expected Start:</strong> 18 February 2026<br>
+        <strong>Expected End:</strong> 19 March 2026<br>
+        <em>(Dates may vary depending on moon sighting)</em>
+        </p>
+        <div id="countdown" aria-live="polite">
             <div class="countdown-item">
-                <span id="days"></span>
+                <span id="days">0</span>
                 <span class="countdown-label">Days</span>
             </div>
             <div class="countdown-item">
-                <span id="hours"></span>
+                <span id="hours">0</span>
                 <span class="countdown-label">Hours</span>
             </div>
             <div class="countdown-item">
-                <span id="minutes"></span>
+                <span id="minutes">0</span>
                 <span class="countdown-label">Minutes</span>
             </div>
             <div class="countdown-item">
-                <span id="seconds"></span>
+                <span id="seconds">0</span>
                 <span class="countdown-label">Seconds</span>
             </div>
+        </div>
+        <div id="celebration" style="display:none;">
+            <h2>Ramadan Mubarak!</h2>
+            <p>The blessed month has begun.</p>
+        </div>
+        <div id="endmsg" style="display:none;">
+            <h2>Eid Mubarak!</h2>
+            <p>Ramadan has ended. May your prayers be accepted!</p>
         </div>
     </div>
     <script src="script.js"></script>
